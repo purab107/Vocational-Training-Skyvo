@@ -1,0 +1,22 @@
+.site-footer{
+    background-color: #f90750 !important;
+    color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.bottom-footer{
+    border-top: 1px solid #b2b2b2;
+    margin-top: 10px;
+    padding-top: 10px;
+    color: #b2b2b2;
+}
+
+.footer-nav{
+    text-align: right;
+}
+
+.footer-nav li{
+    display: inline;
+    padding: 10px;
+}

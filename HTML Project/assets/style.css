@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    margin: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+table td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+table img{
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    transition: transforn 0.3s ease;
+}
+
+table img:hover {
+    transform: scale(1.05);
+}
+
+h2{
+    color: #444;
+    padding: 50px 30px 50px 80px;
+}
+
+#newText{
+    text-align: justify;
+}
+
+.upperCase{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.lowerCase{
+    text-transform: lowercase;
+    font-size: 50px;
+}
+
+.capitalize{
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.mix{
+    border-style: dotted dashed solid double;
+    border-color: magenta;
+}
+
+.batan{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 20px black;
+    display: block;
+    margin-top: 20px;
+}
+
+.disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.batan:hover{
+    background-color: red;
+    color: white;
+    width: 500px;
+    margin-bottom: 50px;
+}
