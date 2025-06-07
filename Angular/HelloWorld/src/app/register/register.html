@@ -1,0 +1,34 @@
+  <div style="text-align: center;" class="header">
+  <h1>
+    welcome to {{title}}!
+  </h1>
+  <h2>
+    who's that pokemon??
+    it's {{pokemon}}!
+  </h2>
+</div>
+
+ <div class="container">
+    <div class="item">PIKACHU</div>
+    <div class="item">CHARMENDAR</div>
+    <div class="item">BULBASAUR</div>
+    <div class="item">BUTTERFREE</div>
+  </div>
+
+  <div class="new-elements" style="text-align: center;">
+    <p>{{ firstName + ' ' + lastName}}</p>
+    <p>{{ firstName.length }}</p>
+    <p>{{ 5+7 }}</p>
+    <br>
+    <img [src]="imageUrl" alt="">
+    <br>
+    <input [value]="firstName">
+    <br>
+    <span [innerHtml]="title"></span>
+  </div>
+
+  <div [ngClass]="currentClass">Dynamic Class</div>
+
+  <div [ngClass]="{'active': isActive, 'highlight': isHighlighted}">Multiple Classes</div>
+
+  <div [class]="isError ? 'error' : 'success'">Conditional Class</div>
