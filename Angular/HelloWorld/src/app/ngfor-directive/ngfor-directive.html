@@ -1,0 +1,9 @@
+<ul style="text-decoration: none; list-style: none;">
+    <li *ngFor="let fruit of items">{{fruit}}</li>
+</ul>
+
+<ul style="text-decoration: none; list-style: none;">
+    <li *ngFor="let fruit of items; let i = index">
+        {{i + 1}}. {{fruit}}
+    </li> 
+</ul>

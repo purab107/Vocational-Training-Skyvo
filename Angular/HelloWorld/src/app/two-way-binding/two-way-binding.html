@@ -1,0 +1,14 @@
+<input type="text" [(ngModel)]="name">
+<div>{{name}}</div>
+
+<p HighlightDirective>This is sanjay kumar time machine activated</p>
+
+<p *ngIf="isLoggedIn">Content to show here</p>
+
+<div *ngIf="isLoggedIn; else loginBlock" >Welcome here my user</div>
+<ng-template #loginBlock>
+    <div>Please log in.</div>
+</ng-template>
+
+
+<!-- sign up ka form banana hai  -->

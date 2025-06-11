@@ -1,0 +1,17 @@
+<input type="text" [(ngModel)]="message">
+<p>this is parent data - <span style="font-weight: bold;">{{message}}</span></p>
+
+
+<!-- <button (click)="sendMessage()">Send</button> -->
+<ul>
+    <li *ngFor="let user of users">
+        {{ user.name}} ({{ user.email }})
+    </li>
+</ul>
+
+<br>
+<h3>Focus Input Example</h3>
+<input type="text" #inputRef placeholder="focus me automatically">
+<br>
+
+<h2>{{msg}}</h2>

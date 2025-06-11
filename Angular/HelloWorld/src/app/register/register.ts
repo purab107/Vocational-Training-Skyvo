@@ -13,7 +13,8 @@ export class Register {
   lastName = 'Parker';
   imageUrl = 'favicon.ico';
   currentClass = 'text-white';
-  isActive = false;
-  isHighlighted = true;
-  isError = true;
+  isActive = true;
+  isHighlighted = false;
+  isError = false;
+  fontSize = 10;
 }

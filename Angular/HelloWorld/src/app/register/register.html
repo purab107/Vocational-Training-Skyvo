@@ -33,9 +33,9 @@
 
   <div [class]="isError ? 'error' : 'success'">Conditional Class</div>
 
-
+<!-- Row-column Component -->
 <div class="row-container">
-  <!-- Column 1: User Info -->
+  <!-- Interpolation -->
   <div class="col-box">
     <h3>User Info</h3>
     <p>Name: {{ firstName + ' ' + lastName }}</p>
@@ -44,21 +44,23 @@
     <img [src]="imageUrl" alt="User Image" width="100">
   </div>
 
-  <!-- Column 2: Form Input -->
+  <!-- Column 2: Property Binding -->
   <div class="col-box">
     <h3>Edit Name</h3>
     <label>First Name:</label><br>
     <input [value]="firstName"><br><br>
     <label>Title Preview:</label><br>
     <span [innerHtml]="title"></span>
+    <br>
+    <img [src]="imageUrl" alt="User Image" width="50px">
   </div>
 
-  <!-- Column 3: Dynamic Styling -->
+  <!-- Column 3: Dynamic Styling : Class Binding -->
   <div class="col-box">
     <h3>Dynamic Classes</h3>
     <div [ngClass]="currentClass">Class from Variable</div><br>
     <div [ngClass]="{'active': isActive, 'highlight': isHighlighted}">Conditional Multiple Classes</div><br>
-    <div [class]="isError ? 'error' : 'success'">Error or Success</div>
+    <div [class]="isError ? 'error' : 'success'">Conditional Class</div>
   </div>
 </div>
 

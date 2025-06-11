@@ -1,3 +1,36 @@
 <app-register>
 </app-register>
+<app-style-binding></app-style-binding>
+<app-event-binding></app-event-binding>
+<br><br><hr>
+<app-two-way-binding></app-two-way-binding>
+<br><br><hr>
+<div class="signUpForm">
+    <app-sign-up-form></app-sign-up-form>
+</div>
+<div>
+    <app-switch-directive></app-switch-directive>
+</div>
+<div>
+    <app-ngfor-directive></app-ngfor-directive>
+</div>
+
+<div style="text-align: center;">
+    <app-demo [message]="name" />
+    <!-- (messageEvent)="receiveMessage($event)"
+    {{childmsg}} -->
+    <input type="text" [(ngModel)]="name">
+</div>
+
+<div>
+    <app-pipes-angular></app-pipes-angular>
+</div>
+
+<div style="border: 2px solid black;">
+    <app-employee-details></app-employee-details>
+</div>
+
+<div>
+    <app-employee-list></app-employee-list>
+</div>
 <router-outlet />

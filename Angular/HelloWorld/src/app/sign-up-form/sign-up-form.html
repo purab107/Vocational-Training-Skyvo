@@ -1,0 +1,26 @@
+<h1 class="header">Sign Up Form</h1>
+
+<form (ngSubmit)="onSubmit()">
+    <div class="formItems">
+        <label>Name: </label>
+        <br>
+        <input [(ngModel)]="name" name="name">
+    </div>
+
+    <div class="formItems">
+        <label>Email: </label>
+        <br>
+        <input [(ngModel)]="email" name="email" >
+    </div>
+
+    <div class="formItems">
+        <label>Password: </label>
+        <br>
+        <input [(ngModel)]="password" name="password" >
+    </div>
+
+    <button type="submit">Sign Up</button>
+</form>
+
+<!-- notes : ngModel enables two way binding -->
+ <!-- forms module is required to use ngModel or you will get error -->
