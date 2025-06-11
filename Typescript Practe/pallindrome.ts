@@ -9,8 +9,9 @@ while(copy > 0){
     copy = Math.floor(copy / 10);
     /* note for me : 
         Unlike c++, copy variable becomes floating point number as we divide it by 10 hence we need to use Math.floor() to
-        convert it into integer 
+        convert it into integer, so please use math.floor it'll convert float into int (really)
     */
+    
 }
 
 if(rev === num){
