@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Register } from './register/register';
 import { StyleBinding } from "./style-binding/style-binding";
 import { EventBinding } from "./event-binding/event-binding";
@@ -16,7 +16,7 @@ import { EmployeeDetails } from "./employee-details/employee-details";
 import { EmployeeList } from "./employee-list/employee-list";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Register, StyleBinding, EventBinding, TwoWayBinding, HighlightDirective, SignUpForm, SwitchDirective, NgforDirective, Demo, PipesAngular, FormsModule, EmployeeDetails, EmployeeList],
+  imports: [RouterOutlet, Register, StyleBinding, EventBinding, TwoWayBinding, HighlightDirective, SignUpForm, SwitchDirective, NgforDirective, Demo, PipesAngular, FormsModule, EmployeeDetails, EmployeeList, RouterLink],
   providers: [Myservice],
   templateUrl: './app.html',
   styleUrl: './app.css'

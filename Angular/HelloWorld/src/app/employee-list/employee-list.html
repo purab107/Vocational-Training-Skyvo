@@ -1,6 +1,6 @@
 <h2>Employee List</h2>
-<ul>
-    <li *ngFor="let employee of employees">
-        {{ employee.name}} ({{ employee.Age }})
+<ul *ngFor="let employee of employees">
+    <li (click)="onSelect(employee)" style="cursor: pointer;">
+        {{ employee.name}}
     </li>
 </ul>

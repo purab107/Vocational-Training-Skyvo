@@ -1,4 +1,4 @@
-<app-register>
+<!-- <app-register>
 </app-register>
 <app-style-binding></app-style-binding>
 <app-event-binding></app-event-binding>
@@ -17,8 +17,8 @@
 
 <div style="text-align: center;">
     <app-demo [message]="name" />
-    <!-- (messageEvent)="receiveMessage($event)"
-    {{childmsg}} -->
+    (messageEvent)="receiveMessage($event)"
+    {{childmsg}}
     <input type="text" [(ngModel)]="name">
 </div>
 
@@ -32,5 +32,19 @@
 
 <div>
     <app-employee-list></app-employee-list>
+</div>
+
+<div class="card m-3 p-3 shadow">
+    <h5 class="card-title">Hello here</h5>
+</div> -->
+
+
+<div style="display: flex; flex-direction: row; list-style: none; justify-content: space-around; align-items: center; border: 1px solid black; height: 80px; ">
+    <li><a routerLink="/employeeDetails">Employee Details</a></li>
+    <li><a routerLink="/employeeList">Employee List</a></li>
+    <li><a routerLink="/TwoWayBinding">Do Tarike Se Binding</a></li>
+    <li><a routerLink="/SignUpForm">Sign Up Form</a></li>
+    <li><a routerLink="/EventBinding">Event Ko Jodna</a></li>
+    <li><a routerLink="/AngularForms">Forms</a></li>
 </div>
 <router-outlet />
