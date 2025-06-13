@@ -24,3 +24,29 @@
 
 <!-- notes : ngModel enables two way binding -->
  <!-- forms module is required to use ngModel or you will get error -->
+<br><br>
+ <div style="display: flex; justify-content: center; width: 100%; border-radius: 50px;">
+    <table class="table table-bordered table-hover table-stripped">
+    <thead class="fw-bold">
+        <th class="text-center">Product ID</th>
+        <th class="text-center">Image</th>
+        <th class="text-center">Title</th>
+        <th class="text-center">Price</th>
+        <th class="text-center">Rating (Rate)</th>
+        <th class="text-center">Rating (Count)</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of product">
+            <td class="text-center">{{item.id}}</td>
+            <td class="text-center"><img src="{{item.image}}" alt="" style="height: 50px; width: 50px;"></td>
+            <td class="text-center" style="width: 200px;">{{item.title}}</td>
+            <td class="text-center">{{item.price}}</td>
+            <td class="text-center">{{item.rating?.rate}}</td>
+            <td class="text-center">{{item.rating?.count}}</td>
+        </tr>
+    </tbody>
+ </table>
+ </div>
+
+ 
+

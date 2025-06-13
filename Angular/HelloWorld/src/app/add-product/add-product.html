@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center align-items-center product-form">
+    <form #productForm="ngForm" class="form-ang" name="form" (ngSubmit)="productForm.form.valid && onSubmit()" novalidate>
+    <div class="form-group">
+        <label >Enter Product ID</label>
+        <input type="text" class="form-control" [(ngModel)]="products.id"   [ngClass]="{ 'is-invalid' : productForm.submitted && id.invalid} " #id="ngModel" name="id" required>
+    </div>
+
+    <div class="form-group">
+        <label >Enter Product Title</label>
+        <input type="text" class="form-control" [(ngModel)]="products.title"   [ngClass]="{ 'is-invalid' : productForm.submitted && title.invalid} " #title="ngModel" name="title" required>
+    </div>
+
+    <div class="form-group">
+        <label >Enter Price</label>
+        <input type="text" class="form-control" [(ngModel)]="products.price"   [ngClass]="{ 'is-invalid' : productForm.submitted && price.invalid} " #price="ngModel" name="price" required>
+    </div>
+
+    <div class="form-group">
+        <label >Enter Product Description</label>
+        <input type="text" class="form-control" [(ngModel)]="products.description"   [ngClass]="{ 'is-invalid' : productForm.submitted && description.invalid} " #description="ngModel" name="description" required>
+    </div>
+
+        <div class="form-group">
+        <label >Enter Product Category</label>
+        <input type="text" class="form-control" [(ngModel)]="products.category"   [ngClass]="{ 'is-invalid' : productForm.submitted && category.invalid} " #category="ngModel" name="category" required>
+    </div>
+
+    <div class="form-group">
+        <label >Enter Product Image</label>
+        <input type="text" class="form-control" [(ngModel)]="products.image"   [ngClass]="{ 'is-invalid' : productForm.submitted && image.invalid} " #image="ngModel" name="image" required>
+    </div>
+    <div class="form-group">
+        <br>
+        <button type="submit" class="btn btn-primary btnn">Submit</button>
+    </div>
+</form>
+</div>
